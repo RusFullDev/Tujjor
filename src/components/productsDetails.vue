@@ -1,5 +1,5 @@
 <script setup>
-import { UseDetails } from "../composable/useNewProductsDetails";
+import { UseDetails } from "../composable/useNewProductsDetails.js";
 const { backPage, fetchDetails } = UseDetails();
 fetchDetails();
 backPage();
