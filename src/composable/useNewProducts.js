@@ -22,3 +22,4 @@ export function UseNewsProduct(){
     
     return{news,error,fechData}
 }
+

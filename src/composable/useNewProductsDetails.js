@@ -1,24 +1,35 @@
 import api from '../api'
 import { ref } from 'vue'
+import { useRoute, useRouter } from "vue-router";
+const route = useRoute();
+const router = useRouter();
 
-export function UseNewsProduct(){
 
+
+export function UseDetails(){
     
+    const backPage = () => {
+        router.go(-1)
+      }
+
+
     const news = ref(null)
     const error = ref(null)
-    
-    
-    const fechData=()=>{
-        api.get('/products',{params:{limit:3}})
-        .then(res=>{
-            news.value = res.data.products;
-            console.log(news.value)
+
+
+
+fetchDetails=()=>{
+    api.get(`/products/${route.params.id}`)
+    .then((res) => {
+        news.value = res.data
+          })
+          .catch((err) => {
+          console.log(err)
+          error.value=err
         })
-        .catch(err=>{
-            console.log("error",err)
-            error.value = err
-        })
-    }
-    
-    return{news,error,fechData}
+}
+
+
+return{backPage,news,error,fetchDetails }
+
 }
