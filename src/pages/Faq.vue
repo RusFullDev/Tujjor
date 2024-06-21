@@ -1,5 +1,5 @@
 <script setup>
-import faq from "../components/faq.vue"
+import faq from "../components/faq/faq.vue"
 </script>
 
 <template>

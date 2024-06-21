@@ -79,7 +79,7 @@ const router = createRouter({
                     component:()=>import('../pages/SearchProducts.vue')
                 },
                 {
-                    path:'products/:id',
+                    path:'product-decription/:id',
                     name:'products-description',
                     component:()=>import('../pages/ProductDescription.vue')
                 },
@@ -87,6 +87,11 @@ const router = createRouter({
                     path:'products',
                     name:'products',
                     component:()=>import('../pages/Products.vue')
+                },
+                {
+                    path:'product/:id',
+                    name:'products-details',
+                    component:()=>import('../pages/ProductDetails.vue')
                 },
                 {
                     path:'purchesed',

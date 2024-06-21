@@ -1,10 +1,13 @@
 <script setup>
 
+import productsDetails from '../components/productsDetails.vue';
+
+
 </script>
 
 <template>
     <div>
-<h1>faq</h1>
+<productsDetails/>
     </div>
 </template>
 
