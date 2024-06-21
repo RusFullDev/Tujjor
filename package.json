@@ -9,9 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@splidejs/vue-splide": "^0.6.12",
     "axios": "^1.7.2",
     "vue": "^3.4.21",
     "vue-router": "^4.3.3",
+    "vue3-toastify": "^0.2.1",
     "vuex": "^4.0.2"
   },
   "devDependencies": {
