@@ -10,7 +10,6 @@
               <h2 class="text-[20px] font-semibold pb-2">Карта сайта</h2>
             </li>
             <li class="py-1 text-[14px]">Главная страница</li>
-            <li class="py-1 text-[14px]">О нас</li>
             <li class="py-1 text-[14px]">Категории товара</li>
             <li class="py-1 text-[14px]">Акции</li>
             <li class="py-1 text-[14px]">Новости</li>
