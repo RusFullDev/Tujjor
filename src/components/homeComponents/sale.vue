@@ -2,29 +2,32 @@
   <div class="md:mt-[50px] mt-[30px]">
     <!-- Image display for larger screens -->
     <div
-      class="container flex justify-between items-center gap-5 max-md:hidden"
+      class="container flex max-md:hidden"
     >
-      <swiper
-        v-if="showSwiper"
-        :modules="[Pagination]"
-        :pagination="{ clickable: true }"
-        :loop="true"
-        class="md:hidden w-full mySwiper"
-      >
-        <swiper-slide v-for="(item, index) in 3" :key="index">
-          <img
-            src="/sm-img/header.png"
-            alt="main_logo_header"
-            class="w-full"
-          />
-        </swiper-slide>
-      </swiper>
-
-      <img
-        src="/sm-img/sale.png"
-        alt="main_logo_header"
-        class="w-[31.9%]"
-      />
+      <div class="flex w-full">
+        <div class=" h-full w-[68%] pr-5">
+          <swiper
+            v-if="showSwiper"
+            :modules="[Pagination]"
+            :pagination="{ clickable: true }"
+            :loop="true"
+            class="md:hidden h-full w-full mySwiper "
+          >
+            <swiper-slide class="h-full" v-for="(item, index) in 3" :key="index">
+              <img
+                src="/sm-img/header.png"
+                alt="main_logo_header"
+                class="w-full h-full"
+              />
+            </swiper-slide>
+          </swiper>
+        </div>
+        <img
+          src="/sm-img/sale.png"
+          alt="main_logo_header"
+          class="w-[31.9%]"
+        />
+      </div>
     </div>
     <!-- Swiper for smaller screens -->
     <div class="md:hidden">
@@ -39,7 +42,7 @@
           <img
             src="/sm-img/header.png"
             alt=""
-            class="swiper-slide mt-[10px]"
+            class="swiper-slide mt-[10px] h-full"
           />
         </swiper-slide>
       </swiper>

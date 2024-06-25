@@ -9,7 +9,6 @@
             <li>
               <h2 class="text-[20px] font-semibold pb-2">Карта сайта</h2>
             </li>
-
              <router-link to="/home">
             <li class="py-1 text-[14px]">Главная страница</li></router-link> 
           <router-link to="/about-us"><li class="py-1 text-[14px]">О нас</li></router-link>
@@ -18,10 +17,6 @@
           <router-link to="/new"><li class="py-1 text-[14px]">Новости</li></router-link>
           <router-link to="/faq"><li class="py-1 text-[14px]">FAQ</li></router-link>
             <router-link to="/personal"> <li class="py-1 text-[14px]">Личный кабинет</li></router-link>
-
-          
-            
-     
           </ul>
         </div>
 
