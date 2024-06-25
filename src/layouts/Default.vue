@@ -8,7 +8,6 @@ import ScrollTop from "../components/scrollTop.vue";
   <div>
     <Navbar />
     <ScrollTop />
-    
     <router-view />
     <Footer />
   </div>

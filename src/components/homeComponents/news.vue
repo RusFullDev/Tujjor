@@ -36,7 +36,7 @@ const btn = () => {
               <p class="text-moviy text-sm leading-6 font-normal">24.04.2021</p>
             </div>
           </div>
-        </router-link>
+        </router-link> 
       </div>
       <div class="flex justify-center">
         <button

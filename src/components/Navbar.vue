@@ -1,15 +1,15 @@
+
 <script setup>
 
 </script>
-
 <template>
     <div>
-<h1>Navbar</h1>
+<h1>navbar</h1>
     </div>
 </template>
 
 
 
-<style  scoped>
+<style lang="scss" scoped>
 
 </style>
