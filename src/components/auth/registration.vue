@@ -85,7 +85,7 @@ const loginUser = () => {
     .post("/auth/login", userData)
     .then((res) => {
       localStorage.setItem("user", JSON.stringify(res.data));
-      router.push("/");
+      router.push("/home");
       console.log("res", res);
     })
     .catch((err) => {
