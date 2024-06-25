@@ -64,3 +64,4 @@ const news = ref([
 </template>
 
 <style scoped></style>
+ok
