@@ -121,8 +121,8 @@
             </div>
             <!-- Input with Search Button -->
             <div
-  
-            class="relative flex justify-between w-full sm:w-[435px] h-[36px] pt-[1px]"
+
+              class="relative flex justify-between w-full sm:w-[435px] h-[36px] pt-[1px]"
             >
               <input
                 type="text"
