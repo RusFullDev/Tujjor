@@ -1,12 +1,19 @@
-
-<script setup>
-
-</script>
 <template>
-    <div>
-<h1>navbar</h1>
-    </div>
-</template>
+  <div class="sticky top-[-65px] z-50">
+    <div class="bg-primary">
+      <nav
+        class="container flex flex-wrap items-center justify-between h-[60px]"
+      >
+        <div class="flex items-center space-x-4 h-full py-[12px]">
+          <img
+            src="/sm-img/Location-footer.png"
+            alt="Location"
+            class="w-6 h-6 sm:w-auto sm:h-auto"
+          />
+          <span class="text-white text-sm sm:text-base">
+            г Ташкент, р<br />Чиланзар, Гавхар 52
+          </span>
+        </div>
 
         <div
           class="flex flex-wrap items-center space-x-4 h-full gap-[10px] sm:gap-[30px]"
@@ -33,7 +40,6 @@
       </nav>
     </div>
 
-
     <!-- Second Div -->
     <div class="shadow-xl w-full bg-white">
       <div class="container">
@@ -43,9 +49,6 @@
             alt="Logo"
             class="w-20 h-auto sm:w-auto sm:h-auto"
           />
-
-<style lang="scss" scoped>
-
 
           <!-- Right Side Icons -->
           <div class="flex flex-wrap gap-[10px] sm:gap-[35px] items-center">
@@ -118,7 +121,8 @@
             </div>
             <!-- Input with Search Button -->
             <div
-              class="relative flex justify-between w-full sm:w-[435px] h-[36px] pt-[1px]"
+  
+            class="relative flex justify-between w-full sm:w-[435px] h-[36px] pt-[1px]"
             >
               <input
                 type="text"
