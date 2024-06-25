@@ -53,6 +53,7 @@ const news = ref([
                 Подробно
               </button>
               <p class="text-blue-400">{{ item.date }}</p>
+              ok
             </div>
           </div>
         </div>
