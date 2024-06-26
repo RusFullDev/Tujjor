@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
 import ProductCard from "./ProductCard.vue";
-import api from "../api";
+import api from "../../api";
 
 const products = ref([]);
 const loading = ref(false);
