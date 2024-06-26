@@ -1,12 +1,14 @@
 <script setup>
-import shopingCard from '../components/shopingCard.vue';
+import Shopping from '../components/shopping/shopping.vue';
+
+
 
 
 </script>
 
 <template>
     <div>
-<shopingCard/>
+<Shopping/>
     </div>
 </template>
 

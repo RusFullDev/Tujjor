@@ -19,7 +19,8 @@ export default {
       colors: {
         'primary': '#F7931F',
         'moviy':'#219EBC',
-        'footer_color':'#023047'
+        'footer_color':'#023047',
+        'grayn':'#EDE9E9'
       },
     },
   },
