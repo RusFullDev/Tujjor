@@ -20,7 +20,9 @@ const props = defineProps({
     <p class="text-lg font-bold">{{ product.title }}</p>
     <div class="flex flex-col py-5">
       <p class="text-[#F7931E] line-through">{{ product.price }} SUM</p>
-      <p class="text-blue-500 font-semibold">{{ product.discountPercentage }} SUM</p>
+      <p class="text-blue-500 font-semibold">
+        {{ product.discountPercentage }} SUM
+      </p>
     </div>
   </div>
 </template>

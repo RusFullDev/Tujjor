@@ -1,7 +1,10 @@
 <script setup>
 import { ref } from "vue";
+import { useRouter } from "vue-router";
 
 import { useProducats } from "../../composable/useProducts";
+
+const router = useRouter();
 
 const limit = ref(15);
 const skip = ref(0);
@@ -18,10 +21,11 @@ fetchProducts(); // Initial fetch
 <template>
   <div class="container py-5">
     <div class="grid md:grid-cols-5 grid-cols-2 md:gap-4 gap-3 mt-10">
-      <div
+      <router-link :to="{ name: 'products-details', params: { id: product.id } }"
         class="bg-white p-5 rounded border hover:shadow-lg duration-300"
         v-for="product in products"
         :key="product.id"
+          
       >
         <img
           :src="product.thumbnail"
@@ -37,7 +41,7 @@ fetchProducts(); // Initial fetch
         <h1 class="text-xl font-semibold text-[#219EBC]">
           ${{ product.price }}
         </h1>
-      </div>
+      </router-link>
     </div>
     <!-- Button -->
     <div class="flex items-center justify-center py-4">
@@ -51,6 +55,4 @@ fetchProducts(); // Initial fetch
     </div>
     <!-- Button -->
   </div>
-
-
 </template>

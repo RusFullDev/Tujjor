@@ -1,6 +1,9 @@
 <script setup>
+import { useRoute } from "vue-router";
 import { UseDetails } from "../composable/useNewProductsDetails.js";
 const { backPage, fetchDetails } = UseDetails();
+
+const route = useRoute();
 fetchDetails();
 backPage();
 </script>

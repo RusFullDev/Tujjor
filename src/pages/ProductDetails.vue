@@ -7,7 +7,7 @@ import productsDetails from '../components/productsDetails.vue';
 
 <template>
     <div>
-<productsDetails/>
+        <productsDetails/>
     </div>
 </template>
 
