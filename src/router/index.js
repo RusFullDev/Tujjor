@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-      {
+    {
       path: "/home",
       name: "home",
       component: () => import("../pages/Home.vue"),
@@ -11,7 +11,7 @@ const router = createRouter({
     {
       path: "/",
       component: () => import("../layouts/Default.vue"),
-      redirect: '/home',
+      redirect: "/home",
       children: [
         {
           path: "home",
@@ -107,6 +107,16 @@ const router = createRouter({
           path: "shopping-card",
           name: "shopping-card",
           component: () => import("../pages/ShoppingCart.vue"),
+        },
+        {
+          path: "/magazine",
+          name: "magazine",
+          component: () => import("../pages/MagazinePage.vue"),
+        },
+        {
+          path: "/mag",
+          name: "mag",
+          component: () => import("../pages/Mag.vue"),
         },
       ],
     },
